@@ -1,9 +1,18 @@
-<form class="form-signin">
-  <h2>Login</h2>
-  <label for="username" class="sr-only">Username</label>
-  <input type="text" required autofocus id="username" #username placeholder="Username/Email" />
-  <label for="password" class="sr-only">Password</label>
-  <input type="password" class="form-control" required autofocus id="password" #password placeholder="Password" />
-  <button type="button" (click)="login(username.value, password.value)">Login</button>
-</form>
-      
+<html>
+<body class="text-center">
+  <form class="form-signin">
+    <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Por favor, entre com suas credenciais</h1>
+    <label for="inputEmail" class="sr-only">Email</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+    <label for="inputPassword" class="sr-only">Senha</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me" placemente="left" ngbTooltip="Guarda suas informações para que você não precise digitá-las na próxima vez"> Continuar conectado
+      </label>
+    </div>
+    <button class="btn btn-primary btn-block" type="button" >Entrar</button>
+  </form>
+</body>
+</html>
